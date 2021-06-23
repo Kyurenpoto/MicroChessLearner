@@ -15,8 +15,15 @@ class LearnerEnvironment(BaseModel):
     url: AnyHttpUrl
 
 
+class LearnerRepository(BaseModel):
+    url: AnyHttpUrl
+
+
 class LearnerInternal(BaseModel):
     env: LearnerEnvironment
+    model: LearnerRepository
+    report: LearnerRepository
+    trajectory: LearnerRepository
     routes: dict[str, str]
 
 
