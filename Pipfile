@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "*"
+uvicorn = "*"
+httpx = "*"
+dependency-injector = "*"
+
+[dev-packages]
+pytest = "*"
+pytest-asyncio = "*"
+pytest-cov = "*"
+black = "*"
+respx = "*"
+pytest-xdist = "*"
+
+[requires]
+python_version = "3.9"
+
+[pipenv]
+allow_prereleases = true
